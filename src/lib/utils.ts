@@ -140,7 +140,7 @@ export function throttle<T extends (...args: any[]) => any>(
   };
 }
 
-// RAG File Validation Utilities
+// File Validation Utilities
 export interface FileValidationResult {
   isValid: boolean;
   error?: string;
@@ -148,7 +148,7 @@ export interface FileValidationResult {
 }
 
 /**
- * Validates a file for RAG upload based on Gemini File Search requirements
+ * Validates a file for upload based on system requirements
  */
 export function validateRagFile(file: File): FileValidationResult {
   const result: FileValidationResult = {

@@ -171,7 +171,7 @@ export const uploadAndIndexFile = async (
   const ai = getAI();
   const customMetadata = context ? [{ key: 'source_context', stringValue: context }] : [];
 
-  onProgress?.('Initializing upload...', 0);
+  onProgress?.('Igniting architectural brilliance...', 0);
 
   let operation = await ai.fileSearchStores.uploadToFileSearchStore({
     file: file,
@@ -200,14 +200,14 @@ export const uploadAndIndexFile = async (
 
     // Provide progress updates based on attempts
     const progress = Math.min(25 + (attempts / maxAttempts) * 70, 95);
-    onProgress?.(`Processing file... (${attempts * 3}s)`, progress);
+    onProgress?.(`Uploading file... (${attempts * 3}s)`, progress);
   }
 
   if (!operation.done) {
     throw new Error('File upload timed out after 3 minutes');
   }
 
-  onProgress?.('File successfully indexed!', 100);
+  onProgress?.('File uploaded successfully!', 100);
 
   return operation.response;
 };

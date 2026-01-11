@@ -18,7 +18,7 @@ export const getUserFriendlyErrorMessage = (error: unknown): string => {
     errorMessage.includes('Forbidden') ||
     errorMessage.includes('unauthorized')
   ) {
-    return 'Access denied. Please verify your API key has the required permissions.';
+    return 'Access blocked! Please check your permissions and try again.';
   }
 
   // Not found errors
@@ -72,7 +72,7 @@ export const getUserFriendlyErrorMessage = (error: unknown): string => {
     errorMessage.includes('project') ||
     errorMessage.includes('billing')
   ) {
-    return 'API configuration issue. Please verify your project settings and API key.';
+    return 'Setup hiccup! Please check your configuration and try again.';
   }
 
   // Timeout errors
@@ -136,7 +136,7 @@ export const getErrorRecoverySuggestion = (error: unknown): string => {
     typeof error === 'string' ? error : error instanceof Error ? error.message : '';
 
   if (errorMessage.includes('403') || errorMessage.includes('API key')) {
-    return 'Try updating your API key in the settings or contact your administrator.';
+    return 'Try tweaking your settings or call in the design cavalry!';
   }
 
   if (errorMessage.includes('file') || errorMessage.includes('upload')) {

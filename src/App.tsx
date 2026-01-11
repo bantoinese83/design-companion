@@ -49,10 +49,10 @@ const App: React.FC = () => {
     <HelmetProvider>
       <ErrorBoundary>
         <Helmet>
-          <title>Design Companion - AI Architectural Intelligence</title>
+          <title>Design Companion - Unleash Your Inner Architect</title>
           <meta
             name="description"
-            content="AI-powered architectural design intelligence grounded in neuroarchitecture, acoustics, and evidence-based design research."
+            content="Unleash your design genius with AI-powered architectural intelligence. Get brilliant insights from neuroarchitecture, acoustics, and evidence-based design research."
           />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="theme-color" content="#000964" />

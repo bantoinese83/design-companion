@@ -33,10 +33,9 @@ const ApiKeySetup: React.FC<ApiKeySetupProps> = ({ onRetry }) => {
           <div className="inline-flex p-6 rounded-[2rem] bg-indigo-600 text-white shadow-2xl shadow-indigo-200 mb-2 transform rotate-12">
             <Icons.key size={48} />
           </div>
-          <h1 className="text-4xl font-black text-slate-900 tracking-tighter">API Key Setup</h1>
+          <h1 className="text-4xl font-black text-slate-900 tracking-tighter">Setup Required</h1>
           <p className="text-slate-500 text-base font-medium leading-relaxed">
-            Configure your Google Gemini API key to enable AI-powered architectural analysis and
-            research-grounded responses.
+            Complete the setup to enable intelligent architectural analysis and expert recommendations.
           </p>
         </div>
         <div className="space-y-6">
@@ -45,19 +44,14 @@ const ApiKeySetup: React.FC<ApiKeySetupProps> = ({ onRetry }) => {
               <strong>Steps to set up:</strong>
             </p>
             <ol className="text-sm text-slate-600 space-y-2 list-decimal list-inside">
-              <li>Get your API key from Google AI Studio</li>
+              <li>Get your access key from the service provider</li>
               <li>
-                Create a{' '}
-                <code className="bg-slate-100 px-1 py-0.5 rounded text-xs">.env.local</code> file in
-                the project root
+                Create a configuration file in your project folder
               </li>
               <li>
-                Add:{' '}
-                <code className="bg-slate-100 px-1 py-0.5 rounded text-xs">
-                  GEMINI_API_KEY=your_key_here
-                </code>
+                Add your key to the configuration file
               </li>
-              <li>Restart the development server</li>
+              <li>Restart the application</li>
             </ol>
           </div>
 
@@ -67,13 +61,13 @@ const ApiKeySetup: React.FC<ApiKeySetupProps> = ({ onRetry }) => {
               className="w-full flex items-center justify-center gap-4"
               size="lg"
             >
-              <span>Get API Key</span>
+              <span>Get Access Key</span>
               <Icons.externalLink size={20} />
             </Button>
 
             {onRetry && (
               <Button onClick={onRetry} variant="secondary" className="w-full">
-                I've Set Up My API Key - Continue
+                I've Completed Setup - Continue
               </Button>
             )}
           </div>

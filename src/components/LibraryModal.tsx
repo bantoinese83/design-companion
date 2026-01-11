@@ -73,7 +73,7 @@ export const LibraryModal: React.FC<LibraryModalProps> = ({
                   Knowledge Library
                 </h3>
                 <p className="text-slate-500 text-sm font-medium">
-                  Neural grounding for intelligent analysis
+                  Architect's Knowledge Vault
                 </p>
               </div>
             </div>
@@ -174,14 +174,14 @@ export const LibraryModal: React.FC<LibraryModalProps> = ({
                   <Icons.database size={20} />
                 </div>
                 <span className="text-[12px] font-black uppercase tracking-[0.4em] text-slate-400">
-                  Store Information
+                  Library Information
                 </span>
               </div>
 
               <div className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
                 <div className="grid md:grid-cols-2 gap-4 text-sm">
                   <div>
-                    <span className="font-medium text-slate-500">Store Name:</span>
+                    <span className="font-medium text-slate-500">Library Name:</span>
                     <p className="font-bold text-slate-800 mt-1">{library.storeName}</p>
                   </div>
                   <div>
@@ -209,7 +209,7 @@ export const LibraryModal: React.FC<LibraryModalProps> = ({
                       className="text-amber-600 mt-0.5 flex-shrink-0"
                     />
                     <div>
-                      <p className="text-sm font-medium text-amber-800">Store Size Warning</p>
+                      <p className="text-sm font-medium text-amber-800">Library Size Notice</p>
                       <p className="text-sm text-amber-700 mt-1">{library.getStoreSizeWarning()}</p>
                     </div>
                   </div>
@@ -234,7 +234,7 @@ export const LibraryModal: React.FC<LibraryModalProps> = ({
                 <FileText size={UI.ICON_SIZES.XXLARGE} className="mx-auto mb-6 text-slate-200" />
                 <p className="text-slate-400 font-medium">No documents indexed yet</p>
                 <p className="text-slate-300 text-sm mt-2">
-                  Upload research documents to enhance AI analysis capabilities
+                  Upload blueprints and research to fuel the Architect's Brain
                 </p>
               </div>
             ) : (

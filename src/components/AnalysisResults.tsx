@@ -52,7 +52,7 @@ export const AnalysisResults: React.FC<AnalysisResultsProps> = React.memo(({ ana
           <div className="flex items-center gap-3">
             <Icons.activity className="text-indigo-500" size={20} />
             <p className="text-sm font-bold text-slate-500">
-              Based on indexed neuroarchitecture metrics
+              Powered by architectural intelligence
             </p>
           </div>
         </div>

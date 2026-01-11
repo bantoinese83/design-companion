@@ -66,7 +66,7 @@ export function useLibrary(): LibraryState & LibraryActions {
       let currentStoreName = storeName;
       if (!currentStoreName) {
         try {
-          setUploadProgress('Initializing knowledge library...');
+          setUploadProgress('Waking up the Architect\'s Brain...');
           const store = await getOrCreateStore('Architecture-Library-v1');
           if (store?.name) {
             currentStoreName = store.name;
@@ -108,14 +108,14 @@ export function useLibrary(): LibraryState & LibraryActions {
         };
 
         setFiles((prev) => [...prev, newFile]);
-        setUploadProgress('Document successfully indexed and ready for queries!');
+        setUploadProgress('Blueprint absorbed! Design genius activated!');
 
         // Clear progress after delay
         setTimeout(() => setUploadProgress(''), 3000);
       } catch (err: any) {
         const errorMessage = getUserFriendlyErrorMessage(err);
         setError(errorMessage);
-        setUploadProgress('Indexing failed. ' + errorMessage);
+        setUploadProgress('Upload failed. ' + errorMessage);
         throw err;
       } finally {
         setIsUploading(false);
@@ -205,11 +205,11 @@ export function useLibrary(): LibraryState & LibraryActions {
     const totalSizeGB = totalSize / (1024 * 1024 * 1024);
 
     if (totalSizeGB > BUSINESS.RAG.STORE_LIMITS.RECOMMENDED_MAX_GB) {
-      return `Store size (${totalSizeGB.toFixed(2)}GB) exceeds recommended limit of ${BUSINESS.RAG.STORE_LIMITS.RECOMMENDED_MAX_GB}GB. Consider creating a new store for optimal performance.`;
+      return `Library size (${totalSizeGB.toFixed(2)}GB) exceeds recommended limit. Consider removing some files for better performance.`;
     }
 
     if (totalSizeGB > BUSINESS.RAG.STORE_LIMITS.TIER_2_GB) {
-      return `Store size (${totalSizeGB.toFixed(2)}GB) approaches Tier 2 limit of ${BUSINESS.RAG.STORE_LIMITS.TIER_2_GB}GB.`;
+      return `Library size (${totalSizeGB.toFixed(2)}GB) is getting large. Consider organizing your files.`;
     }
 
     return null;

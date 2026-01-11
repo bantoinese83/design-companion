@@ -43,7 +43,7 @@ export const CitationModal: React.FC<CitationModalProps> = ({ citation, onClose 
             content={
               citation.retrievedContext?.text ||
               citation.text ||
-              'Segment content is currently being decoded from the RAG store...'
+              'Unveiling architectural wisdom...'
             }
           />
           "

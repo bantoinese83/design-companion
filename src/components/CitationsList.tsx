@@ -29,7 +29,7 @@ export const CitationsList: React.FC<CitationsListProps> = ({ citations, onCitat
             </span>
           </div>
           <span className="truncate max-w-[200px] font-black">
-            {c.retrievedContext?.title ?? c.fileSearchStore?.displayName ?? `Resource ${i + 1}`}
+            {c.retrievedContext?.title ?? c.fileSearchStore?.displayName ?? `Source ${i + 1}`}
           </span>
         </button>
       ))}

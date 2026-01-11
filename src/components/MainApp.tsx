@@ -192,7 +192,7 @@ const MainApp: React.FC = () => {
           <div className="p-8 border-t border-slate-50 space-y-4">
             <Button onClick={openLibrary} variant="ghost" className="w-full justify-start">
               <Icons.book size={20} className="mr-3" />
-              RAG Library ({library.files.length})
+              Architect's Vault ({library.files.length})
             </Button>
             <Button
               onClick={() => auth.logout()}
@@ -229,7 +229,7 @@ const MainApp: React.FC = () => {
                   }`}
                 />
                 <span className="text-[10px] text-slate-400 font-black uppercase tracking-[0.3em]">
-                  {library.storeName ? 'Neural Core Grounded' : 'Engine Standby'}
+                  {library.storeName ? 'Architect\'s Brain Online' : 'Waking Up Genius'}
                 </span>
               </div>
             </div>
@@ -271,7 +271,7 @@ const MainApp: React.FC = () => {
                       <div className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-ping" />
                         <p className="text-[11px] font-black text-slate-400 uppercase tracking-[0.3em]">
-                          Querying Research Database
+                          Unleashing design genius
                         </p>
                       </div>
                     </div>
@@ -384,7 +384,7 @@ const MainApp: React.FC = () => {
       <ConfirmDialog
         isOpen={!!confirmDelete}
         title={`Remove ${confirmDelete?.type === 'session' ? 'Consultation' : 'Library File'}?`}
-        message={`This action will permanently delete "${confirmDelete?.name}". All associated neural grounding for this item will be lost.`}
+        message={`This action will permanently delete "${confirmDelete?.name}". This cannot be undone.`}
         onConfirm={handleConfirmDelete}
         onCancel={() => setConfirmDelete(null)}
         confirmText="Delete"

@@ -63,7 +63,7 @@ const LibraryEmptyState: React.FC<LibraryEmptyStateProps> = ({ onUploadFile, isA
     title="Knowledge library is empty"
     description={
       isAdmin
-        ? "Upload research documents and technical manuals to enhance the AI's architectural expertise."
+        ? "Upload blueprints and research to supercharge the Architect's Brain."
         : 'The knowledge library is currently empty. Contact your administrator to add research materials.'
     }
     action={
@@ -86,7 +86,7 @@ const MessagesEmptyState: React.FC<MessagesEmptyStateProps> = ({ onStartConsulta
   <EmptyState
     icon={<Icons.message className="h-16 w-16 text-indigo-400" />}
     title="Ready for consultation"
-    description="Upload a blueprint, share your design challenge, or ask about architectural patterns. Every response is grounded in your project's research library."
+    description="Upload blueprints, share design dilemmas, or ask about architectural wonders. Every insight is forged from your research vault."
     action={{
       label: 'Start Consulting',
       onClick: onStartConsultation,

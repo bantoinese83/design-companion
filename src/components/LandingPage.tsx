@@ -48,7 +48,7 @@ const LandingPage: React.FC = () => {
             href="#"
             className="hover:text-white transition-colors border-b-2 border-transparent hover:border-indigo-500 pb-1"
           >
-            RAG Pipeline
+            How It Works
           </a>
           <a
             href="#"
@@ -76,8 +76,8 @@ const LandingPage: React.FC = () => {
         </h1>
 
         <p className="text-slate-400 text-xl md:text-2xl max-w-3xl leading-relaxed mb-16 font-medium animate-in fade-in slide-in-from-bottom-12 duration-1000">
-          Transform functional React prototypes into live, intelligent agents. Ground your AI in a
-          library of specialized neuroarchitecture and school design research.
+          Unleash your inner design genius with AI-powered architectural intelligence. Upload blueprints,
+          ask design dilemmas, and receive brilliant insights forged from cutting-edge school design research.
         </p>
 
         {/* Role Selection Points */}
@@ -116,7 +116,7 @@ const LandingPage: React.FC = () => {
             <div className="space-y-4">
               <h3 className="text-4xl font-black tracking-tighter">Knowledge Admin</h3>
               <p className="text-slate-400 text-lg font-medium leading-relaxed max-w-xs">
-                Govern the RAG library. Ingest PDF research, set context, and manage project
+                Command the Architect's Brain. Upload blueprints, forge design wisdom, and orchestrate brilliance
                 grounding.
               </p>
             </div>

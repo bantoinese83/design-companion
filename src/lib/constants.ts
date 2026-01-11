@@ -101,7 +101,7 @@ export const BUSINESS = {
     ALLOWED_EXTENSIONS: ['.pdf', '.txt', '.doc', '.docx'],
   },
 
-  // RAG (Retrieval Augmented Generation) constants
+  // File processing and storage constants
   RAG: {
     FILE_LIMITS: {
       MAX_SIZE_BYTES: 100 * 1024 * 1024, // 100MB (per Gemini docs)
