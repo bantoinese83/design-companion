@@ -1,0 +1,7 @@
+{
+  "name": "Architectural Design Companion",
+  "description": "An expert consultant tool for school architects, leveraging Gemini RAG to provide critiques based on school design and neuroarchitecture principles.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

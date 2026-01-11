@@ -1,0 +1,16 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "entry": ["src/index.tsx", "src/App.tsx"],
+  "project": ["src/**/*.{ts,tsx}"],
+  "ignore": ["**/*.d.ts", "**/*.config.*"],
+  "ignoreDependencies": ["@types/node", "@vitejs/plugin-react", "framer-motion", "tailwindcss"],
+  "rules": {
+    "files": "warn",
+    "dependencies": "error",
+    "devDependencies": "warn",
+    "unlisted": "warn",
+    "binaries": "warn",
+    "unresolved": "error",
+    "exports": "warn"
+  }
+}
