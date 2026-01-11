@@ -1,11 +1,5 @@
 # 🏗️ Architectural Design Companion
 
-<div align="center">
-  <img width="1200" height="475" alt="Architectural Design Companion" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-  <p><strong>AI-Powered Architectural Analysis & Consulting Platform</strong></p>
-  <p>Transform functional React prototypes into intelligent agents grounded in neuroarchitecture and school design research.</p>
-</div>
-
 ## ✨ Features
 
 - 🤖 **AI-Powered Analysis**: Google Gemini integration for intelligent architectural analysis
